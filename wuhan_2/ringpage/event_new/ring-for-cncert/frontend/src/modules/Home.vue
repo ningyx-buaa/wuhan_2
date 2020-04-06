@@ -2,7 +2,7 @@
 <!-- <<<<<<< HEAD -->
   <div class="page-wrapper" v-title data-title="事件分析">
 <!-- ======= -->
-  <div class="page-wrapper" v-title data-title="专家观点">
+  <!-- <div class="page-wrapper" v-title data-title="专家观点"> -->
 <!-- >>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5 -->
     <v-filter-tab @update:filter="updateFilter"></v-filter-tab>
     <v-search-box :search-input.sync="searchInput"></v-search-box>
