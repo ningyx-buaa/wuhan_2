@@ -17,11 +17,11 @@ var port = process.env.PORT || config.dev.port
 if (process.argv[2] === '--local') {
   port = 8091
 }
-<<<<<<< HEAD
+// <<<<<<< HEAD
 port = 8093
-=======
-port = 8094
->>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
+// =======
+// port = 8094
+// >>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
 // automatically open browser, if not set will be false
 var autoOpenBrowser = !!config.dev.autoOpenBrowser
 // Define HTTP proxies to your custom API backend
