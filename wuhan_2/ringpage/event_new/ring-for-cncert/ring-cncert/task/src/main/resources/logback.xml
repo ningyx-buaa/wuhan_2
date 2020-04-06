@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configuration>
+    <appender name="console" class="ch.qos.logback.core.ConsoleAppender">
+        <encoder>
+            <pattern>%d{HH:mm:ss.SSS} [%thread] %-5level %logger{36} - %msg%n</pattern>
+        </encoder>
+    </appender>
+
+    <logger name="act.ring.cncert.task" level="INFO"/>
+
+    <logger
+            name="org.apache.kafka.clients.producer.ProducerConfig"
+            level="WARN"/>
+    <logger
+            name="org.apache.kafka.clients.consumer.ConsumerConfig"
+            level="WARN"/>
+    <logger
+            name="org.apache.kafka.common.utils.AppInfoParser"
+            level="WARN"/>
+    <logger
+            name="org.apache.kafka.clients.NetworkClient"
+            level="ERROR"/>
+    <logger
+            name="kafka.consumer.SimpleConsumer"
+            level="WARN"/>
+    <logger
+            name="kafka.utils"
+            level="WARN"/>
+    <logger
+            name="kafka.producer"
+            level="WARN"/>
+    <logger
+            name="kafka.consumer"
+            level="WARN"/>
+    <logger
+            name="kafka.client"
+            level="WARN"/>
+
+    <root level="INFO">
+        <appender-ref ref="console"/>
+    </root>
+</configuration>

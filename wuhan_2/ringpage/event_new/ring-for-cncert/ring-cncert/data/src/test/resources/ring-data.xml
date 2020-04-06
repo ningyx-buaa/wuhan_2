@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<configuration>
+    <data-index name="weibo" class="act.ring.cncert.data.index.WeiboIndex">
+    </data-index>
+
+    <data-index name="webnews" class="act.ring.cncert.data.index.WebNewsIndex">
+    </data-index>
+
+    <data-index name="wechat" class="act.ring.cncert.data.index.WechatIndex">
+    </data-index>
+
+    <data-index name="tieba" class="act.ring.cncert.data.index.TiebaIndex">
+    </data-index>
+
+    <data-index name="terrens" class="act.ring.cncert.data.index.TerrenIndex">
+    </data-index>
+
+    <data-index name="zhxg" class="act.ring.cncert.data.index.ZhxgIndex">
+    </data-index>
+
+    <data-source name="RingDataTest">
+        <data-index-ref ref="terrens"></data-index-ref>
+        <data-index-ref ref="webnews"></data-index-ref>
+        <data-index-ref ref="wechat"></data-index-ref>
+        <data-index-ref ref="tieba"></data-index-ref>
+        <data-index-ref ref="weibo"></data-index-ref>
+    </data-source>
+
+    <!-- 天津网信办大屏数据源 -->
+    <data-source name="RingInWXB">
+        <data-index-ref ref="zhxg"></data-index-ref>
+    </data-source>
+</configuration>
