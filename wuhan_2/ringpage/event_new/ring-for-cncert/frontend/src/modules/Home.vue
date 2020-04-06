@@ -1,9 +1,9 @@
 <template>
-<<<<<<< HEAD
+<!-- <<<<<<< HEAD -->
   <div class="page-wrapper" v-title data-title="事件分析">
-=======
+<!-- ======= -->
   <div class="page-wrapper" v-title data-title="专家观点">
->>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
+<!-- >>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5 -->
     <v-filter-tab @update:filter="updateFilter"></v-filter-tab>
     <v-search-box :search-input.sync="searchInput"></v-search-box>
     <!-- <v-list :disp-datas="dispDatas"
@@ -105,13 +105,13 @@ import Colors from 'components/Colors'
 import List from 'components/list/List'
 import SearchBox from 'components/search/SearchBox'
 import FilterTab from 'components/filtertab/FilterTab'
-<<<<<<< HEAD
+// <<<<<<< HEAD
 import {ChartLib} from './ChartLib.js'
 import echarts from 'echarts'
 // import Data from "../assets/data.json"
-=======
+// =======
 import Data from "../assets/data.json"
->>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
+// >>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
 
 export default {
   data () {
