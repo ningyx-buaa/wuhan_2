@@ -1,0 +1,103 @@
+{
+    "template": "foreigns*",
+    "settings": {
+        "number_of_shards": 1
+    },
+    "mappings": {
+        "message": {
+            "_source": {
+                "excludes": ["origin_text", "id", "@version"]
+            },
+            "properties": {
+                "user": {
+                    "type": "string"
+                },
+                "userid": {
+                    "type": "string"
+                },
+                "title": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "text": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "origin_title": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "origin_text": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "location": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "emotion": {
+                    "type": "integer"
+                },
+                "viewcnt": {
+                    "type": "integer"
+                },
+                "likecnt": {
+                    "type": "integer"
+                },
+                "dislikecnt": {
+                    "type": "integer"
+                },
+                "hot": {
+                    "type": "integer"
+                },
+                "importance": {
+                    "type": "integer"
+                },
+                "recommend": {
+                    "type": "integer"
+                },
+                "risk": {
+                    "type": "integer"
+                },
+                "gfw": {
+                    "type": "integer"
+                },
+                "secu": {
+                    "type": "integer"
+                },
+                "type0": {
+                    "type": "integer"
+                },
+                "type1": {
+                    "type": "integer"
+                },
+                "type2": {
+                    "type": "integer"
+                },
+                "url": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "time": {
+                    "format": "strict_date_optional_time||epoch_millis",
+                    "type": "date"
+                },
+                "corewords": {
+                    "analyzer": "ik",
+                    "type": "string"
+                },
+                "detailwords": {
+                    "analyzer": "ik",
+                    "type": "string"
+                },
+                "simids": {
+                    "analyzer": "ik",
+                    "type": "string"
+                },
+                "parentid": {
+                    "type": "string"
+                }
+            }
+        }
+    }
+}

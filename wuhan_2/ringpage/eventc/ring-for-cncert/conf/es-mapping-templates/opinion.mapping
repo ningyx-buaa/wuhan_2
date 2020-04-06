@@ -1,0 +1,58 @@
+{
+    "template": "opinion*",
+    "settings": {
+        "number_of_shards": 1
+    },
+    "mappings": {
+        "message": {
+            "_source": {
+                "excludes": [
+                    "text",
+                    "origin_text",
+                    "id",
+                    "@version"
+                ]
+            },
+            "properties": {
+                "user": {
+                    "type": "string"
+                },
+                "userid": {
+                    "type": "string"
+                },
+                "datatag": {
+                    "type": "integer"
+                },
+                "title": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "opinion": {
+                    "type": "string",
+                    "analyzer": "ik"
+                },
+                "emotion": {
+                    "type": "integer"
+                },
+                "hot": {
+                    "type": "integer"
+                },
+                "novelty": {
+                    "type": "integer"
+                },
+                "url": {
+                    "type": "string",
+                    "index": "not_analyzed"
+                },
+                "time": {
+                    "format": "strict_date_optional_time||epoch_millis",
+                    "type": "date"
+                },
+                "corewords": {
+                    "analyzer": "ik",
+                    "type": "string"
+                }
+            }
+        }
+    }
+}
