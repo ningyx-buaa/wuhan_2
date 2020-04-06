@@ -3,7 +3,7 @@
     <div :href="'/' + jumpto" class="con-box l-t-box">
       <!-- <Echarts theme="ring" :option="options.left_up.option" className="chart" ></Echarts> -->
       <center>
-        <a :href="'http://localhost:8092'">
+        <a :href="'http://10.1.1.11:8090:8092'">
           <font size="6" color="white">综合选题</font>
         </a>
       </center>
@@ -28,7 +28,7 @@
     <div class="con-box r-t-box" @click="goto">
       <!-- <Echarts theme="ring" :option="options.right_up.option" className="chart" ></Echarts> -->
       <center>
-        <a :href="'http://localhost:8094'">
+        <a :href="'http://10.1.1.11:8090:8094'">
           <font size="6" color="white">专家观点</font>
         </a>
       </center>
@@ -54,7 +54,7 @@
     </div>
     <div class="con-box r-b-box" @click="goto">
       <center>
-        <a :href="'http://localhost:8093'">
+        <a :href="'http://10.1.1.11:8090:8093'">
           <font size="6" color="white">事件分析</font>
         </a>
       </center>
