@@ -8,3 +8,8 @@
 	专家观点：\wuhan_2\ringpage\eventc\ring-for-cncert\frontend
 	事件分析：\wuhan_2\ringpage\event_new\ring-for-cncert\frontend
 进入后输入：cnpm run start
+
+一级页面端口：8090
+	综合推荐：8092
+	专家观点：8093
+	事件分析：8094
