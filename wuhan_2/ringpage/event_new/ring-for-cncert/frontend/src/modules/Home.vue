@@ -145,7 +145,10 @@ export default {
           text: ''
       },
       tooltip: {
-          trigger: 'axis'
+          trigger: 'axis',
+          formatter: function (param) {
+                return param.data.name + ":" + param.data.value;
+          }
       },
       legend: {
           data: ['朝鲜','南海','台湾']
@@ -176,19 +179,19 @@ export default {
               type: 'line',
               stack: '总量',
               areaStyle: {normal: {}},
-              label: {
-                    normal: {
-                      show: true,
-                      position: 'inner',
-                      textStyle: {
-                        fontWeight: 300 ,
-                        fontSize: 16
-                      },
-                      formatter: function (param) {
-                        return param.data.name + ":" + param.data.value;
-                    }
-                  }
-              },
+              // label: {
+              //       normal: {
+              //         show: true,
+              //         position: 'inner',
+              //         textStyle: {
+              //           fontWeight: 300 ,
+              //           fontSize: 16
+              //         },
+              //         formatter: function (param) {
+              //           return param.data.name + ":" + param.data.value;
+              //       }
+              //     }
+              // },
               data: [
                 {value: 3755, name: '美方在南海开展“航行自由行动”？中方：人不犯我 我不犯人'},
                 {value: 3511, name: '外交部丨所谓南海航行与飞越自由就是一个伪命题'},
@@ -266,7 +269,18 @@ export default {
               // formatter: '{name}',
               bottom: 10,
               left: 'center',
-              data: ["入侵行动", "国家立场", "防卫行动", "军演行动", "媒体评论", "访问行动"]
+              formatter: '{name}',
+                textStyle:{
+                    color: '#FFFFFF'
+              },
+              data: [
+                {name: "入侵行动"},
+                {name: "国家立场"},
+                {name: "防卫行动"},
+                {name: "军演行动"},
+                {name: "媒体评论"},
+                {name: "访问行动"}
+              ]
           },
           series: [
               {
