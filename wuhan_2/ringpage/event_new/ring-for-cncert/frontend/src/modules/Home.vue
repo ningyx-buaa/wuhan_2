@@ -193,18 +193,18 @@ export default {
               //     }
               // },
               data: [
-                {value: 3755, name: '美方在南海开展“航行自由行动”？中方：人不犯我 我不犯人'},
+                {value: 3755, name: '美方在南海开展“航行自由行动”？'},
                 {value: 3511, name: '外交部丨所谓南海航行与飞越自由就是一个伪命题'},
                 {value: 3605, name: '英军舰驶近西沙群岛 遭中方护卫舰和直升机驱离'},
-                {value: 11859, name: '外交部:反对打着航行自由幌子损害南海沿岸国主权与安全利益的行为'},
+                {value: 11859, name: '外交部:反对打着航行自由幌子损害南海'},
                 {value: 4635, name: '美军称中国驱逐舰在南海逼近美舰 最近仅45英尺'},
-                {value: 63858, name: '国防部回应美军南海“航行自由行动”：航行不是“横行”'},
+                {value: 63858, name: '国防部回应美军南海“航行自由行动”'},
                 {value: 6547, name: '美批准南海"航行自由"计划 印度窃喜:中国会忙翻'},
                 {value: 7774, name: '中国驻英大使投书英媒：中国不容美国在南海“秀肌肉”'},
-                {value: 3720, name: '美军巡洋舰在西沙群岛附近“航行自由”，此前刚刚访问中国香港'},
+                {value: 3720, name: '美军巡洋舰在西沙群岛附近“航行自由”'},
                 {value: 6547, name: '美批准南海"航行自由"计划 印度窃喜:中国会忙翻'},
                 {value: 7774, name: '中国驻英大使投书英媒：中国不容美国在南海“秀肌肉”'},
-                {value: 3720, name: '美军巡洋舰在西沙群岛附近“航行自由”，此前刚刚访问中国香港'}
+                {value: 3720, name: '美军巡洋舰在西沙群岛附近“航行自由”'}
               ]
           },
       ]
@@ -265,13 +265,15 @@ export default {
           },
           legend: {
               orient: 'vertical',
-              show: true,
-              top: 'middle',
-              x: 'left',
-              itemWidth: 70,
-              itemHeight: 30,
+              // show: true,
+              // top: 'middle',
+              // x: 'left',
+              left: '70%',
+              y: 'center',
+              // itemWidth: 70,
+              // itemHeight: 30,
               // formatter: '{name}',
-              bottom: 10,
+              // bottom: 10,
               // formatter: '{name}',
               //   textStyle: {
               //       color: 'black'
@@ -314,13 +316,13 @@ export default {
                       {value: 735, name: '各家媒体进行评论报道'},
                       {value: 735, name: '国家元首决定进行访问行动'}
                   ],
-                  emphasis: {
-                      itemStyle: {
-                          shadowBlur: 10,
-                          shadowOffsetX: 0,
-                          shadowColor: 'rgba(0, 0, 0, 0.5)'
-                      }
-                  }
+                  // emphasis: {
+                  //     itemStyle: {
+                  //         shadowBlur: 10,
+                  //         shadowOffsetX: 0,
+                  //         shadowColor: 'rgba(0, 0, 0, 0.5)'
+                  //     }
+                  // }
               }
           ]
       };
