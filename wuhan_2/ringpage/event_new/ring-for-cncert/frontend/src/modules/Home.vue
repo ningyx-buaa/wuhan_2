@@ -167,8 +167,8 @@ export default {
       xAxis: {
           type: 'category',
           boundaryGap: false,
-          data: ['2019年12月1日','2019年12月2日','2019年12月3日','2019年12月4日','2019年12月5日','2019年12月6日','2019年12月7日','2019年12月8日',
-          '2019年12月9日','2019年12月10日','2019年12月11日','2019年12月12日']
+          data: ['19.12.1','19.12.2','19.12.3','19.12.4','19.12.5','19.12.6','19.12.7','19.12.8',
+          '19.12.9','19.12.10','19.12.11','19.12.12']
       },
       yAxis: {
           type: 'value'
@@ -255,78 +255,59 @@ export default {
     // };
     var ru_data = this.genData(50);
     var right_up_option = {
-          title: {
-              text: '美军两架B-1B轰炸机与日空自联演后飞越南海上空',
-              left: 'center'
-          },
-          tooltip: {
-              trigger: 'item',
-              formatter: '{a} <br/>{b} : {c} ({d}%)'
-          },
-          legend: {
-              orient: 'vertical',
-              // show: true,
-              // top: 'middle',
-              // x: 'left',
-              left: '70%',
-              y: 'center',
-              // itemWidth: 70,
-              // itemHeight: 30,
-              // formatter: '{name}',
-              // bottom: 10,
-              // formatter: '{name}',
-              //   textStyle: {
-              //       color: 'black'
-              // },
-              // data: [
-              //   {name: "入侵行动"},
-              //   {name: "国家立场"},
-              //   {name: "防卫行动"},
-              //   {name: "军演行动"},
-              //   {name: "媒体评论"},
-              //   {name: "访问行动"}
-              // ]
-              data: ["入侵行动", "国家立场", "防卫行动", "军演行动", "媒体评论", "访问行动"],
-          },
-          series: [
+        title: {
+          text: '美军两架B-1B轰炸机与日空自联演后飞越南海上空',
+          subtext: '',
+          x: 'center'
+        },
+        tooltip: {
+          trigger: 'item',
+          formatter: "{a} <br/>{b}({d}%)"
+        },
+        legend: {
+          orient: 'vertical',
+          left: '70%',  //图例距离左的距离
+          y: 'center',  //图例上下居中
+          data: ["入侵行动", "国家立场", "防卫行动", "军演行动", "媒体评论", "访问行动"]
+        },
+        color: ['rgb(203,155,255)', 'rgb(149,162,255)', 'rgb(58,186,255)',
+                'rgb(119,168,249)', 'rgb(235,161,159)', 'rgb(200,101,159)'],//五个数据，五个颜色
+        series: [
+          {
+            name: '',
+            type: 'pie',
+            radius: '70%',  //图的大小
+            center: ['35%', '50%'], //图的位置，距离左跟上的位置
+            data:[
               {
-                  type: 'pie',
-                  radius: '65%',
-                  center: ['50%', '50%'],
-                  selectedMode: 'single',
-                  label: {
-                    normal: {
-                      show: true,
-                      position: 'inner',
-                      textStyle: {
-                        fontWeight: 300 ,
-                        fontSize: 16
-                      },
-                        formatter: '{d}%'
-                    }
-                  },
-                  data: [
-                      {
-                          value: 1548,
-                          name: '外国发动入侵行动'
-                      },
-                      {value: 535, name: '国家所持有的立场'},
-                      {value: 510, name: '南海采取相应防卫行动'},
-                      {value: 634, name: '外国在我南海进行军演行动'},
-                      {value: 735, name: '各家媒体进行评论报道'},
-                      {value: 735, name: '国家元首决定进行访问行动'}
-                  ],
-                  // emphasis: {
-                  //     itemStyle: {
-                  //         shadowBlur: 10,
-                  //         shadowOffsetX: 0,
-                  //         shadowColor: 'rgba(0, 0, 0, 0.5)'
-                  //     }
-                  // }
+                name:"入侵行动",
+                value:'10'
+              },
+              {
+                name:"国家立场",
+                value:'8'
+              },
+              {
+                name:"防卫行动",
+                value:'9'
+              },
+              {
+                name:"军演行动",
+                value:'5'
+              },
+              {
+                name:"媒体评论",
+                value:'6'
+              },
+              {
+                name:"访问行动",
+                value:'4'
               }
-          ]
+            ]
+          }
+        ]
       };
-    myChart.setOption(right_up_option);
+      myChart.setOption(right_up_option);
 
     myChart = echarts.init(document.getElementById('left_down'));
     var left_down_option = {
