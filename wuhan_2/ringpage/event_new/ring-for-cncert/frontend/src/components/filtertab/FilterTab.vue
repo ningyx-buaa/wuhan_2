@@ -50,7 +50,7 @@
           <i class="fa fa-times" v-show="_.includes(selectedLegacyTypes, typeid)"></i> -->
         </b-nav-item>
       </b-nav>
-    </dl> -->
+    </dl>
     <!-- <dl class="dl-group others">
       <dt>事件&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;描述：</dt>
       <ul class="list-ul">
@@ -86,13 +86,8 @@
         categories: ManyType,
         types: ["入侵行动", "国家立场", "防卫行动", "军演行动", "媒体评论", "访问行动", "其他"],
         topics: Topic,
-// <<<<<<< HEAD
         languages: ['朝鲜拟重启洲际导弹试验和试验活动'],
         locations: ['全部', '2019-09-11', '2019-12-31'],
-// =======
-        // languages: ['全部', '中文'],
-        // locations: ['全部', '国内', '海外'],
-// >>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
         selectedCats: [],
         selectedLegacyTypes: [],
         selectedLanguge: '全部',

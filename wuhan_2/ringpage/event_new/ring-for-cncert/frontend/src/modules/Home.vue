@@ -2,23 +2,6 @@
   <div class="page-wrapper" v-title data-title="事件分析">
     <v-filter-tab @update:filter="updateFilter"></v-filter-tab>
     <v-search-box :search-input.sync="searchInput"></v-search-box>
-    <!-- <v-list :disp-datas="dispDatas"
-            :fetch-simitems-cb="fetchSimNewsById"></v-list> -->
-    <!-- <div class="con-box l-t-box">
-        <Echarts theme="ring" :option="options.left_up.option" className="chart" ></Echarts>
-    </div>
-    <div class="con-box r-t-box">
-      <Echarts theme="ring" :option="options.right_up.option" className="chart" ></Echarts>
-    </div>
-    <div class="con-box l-b-box">
-      <Echarts theme="ring" :option="options.left_down.option" className="chart" ></Echarts>
-    </div>
-    <div class="con-box r-b-box" @click="goto">
-      <div class="chart">
-        <Echarts theme="ring" :option="options.right_down.option" className="chart" ></Echarts>
-      </div>
-    </div> -->
-    <!-- <iframe> -->
       <table border="" cellspacing="" cellpadding="" style="width:1200px">
             <tr>
                 <td style="width:500px; height: 300px">
