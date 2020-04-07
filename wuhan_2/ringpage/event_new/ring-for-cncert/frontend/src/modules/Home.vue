@@ -255,8 +255,9 @@ export default {
                         fontWeight: 300 ,
                         fontSize: 16
                       },
-                        formatter: '{d}%' + data.name
-                    }
+                      formatter: function (param) {
+                         return '{d}%' + param.data.name;
+                      }
                   },
                   data: [
                       {

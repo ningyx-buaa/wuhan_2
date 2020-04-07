@@ -63,7 +63,7 @@
       </div>
     </div>
     <div class="center-box">
-      <div class="chart" id="echarts-globe"></div>
+      <!-- <div class="chart" id="echarts-globe"></div> -->
     </div>
     <a :href="'/' + jumpto" class="next-page">
       <img src="~assets/images/next-page.png" alt="">
@@ -500,8 +500,8 @@
             }
           }
         };
-        this.globe = echarts.init(document.getElementById('echarts-globe'));
-        this.globe.setOption(globe_new_option);
+        // this.globe = echarts.init(document.getElementById('echarts-globe'));
+        // this.globe.setOption(globe_new_option);
         this.regions = mapChart.getModel().getComponent('geo').coordinateSystem.regions;
         var geo;
         geo = mapChart.getModel().getComponent('geo').coordinateSystem;
@@ -515,33 +515,33 @@
       around (index) {
         // this.region = this.regions[Math.round(Math.random() * (this.regions.length - 1))];
         this.region = this.regions[index];
-        this.globe.setOption({
-          title: {
-            left: 'center',
-            top: 'center',
-            text: this.region.name,
-            textStyle: {
-              fontSize: 40
-            }
-          },
-          globe: {
-            viewControl: {
-              targetCoord: this.region.center
-            }
-          }
-        });
-        this.globe.setOption({
-          geo: {
-            regions: [{
-              name: this.region.name,
-              itemStyle: {
-                normal: {
-                  areaColor: '#444'
-                }
-              }
-            }]
-          }
-        });
+        // this.globe.setOption({
+        //   title: {
+        //     left: 'center',
+        //     top: 'center',
+        //     text: this.region.name,
+        //     textStyle: {
+        //       fontSize: 40
+        //     }
+        //   },
+        //   globe: {
+        //     viewControl: {
+        //       targetCoord: this.region.center
+        //     }
+        //   }
+        // });
+        // this.globe.setOption({
+        //   geo: {
+        //     regions: [{
+        //       name: this.region.name,
+        //       itemStyle: {
+        //         normal: {
+        //           areaColor: '#444'
+        //         }
+        //       }
+        //     }]
+        //   }
+        // });
       },
       update_globe_option () {
         this.globe_t_option.globe.displacementScale = 0.1249;
