@@ -62,9 +62,9 @@
         <Echarts theme="ring" :option="options.right_down.option" className="chart" ></Echarts>
       </div>
     </div>
-    <!-- <div class="center-box">
-      <div class="chart" id="echarts-globe"></div>
-    </div> -->
+    <div class="center-box">
+      <!-- <div class="chart" id="echarts-globe"></div> -->
+    </div>
     <a :href="'/' + jumpto" class="next-page">
       <img src="~assets/images/next-page.png" alt="">
     </a>

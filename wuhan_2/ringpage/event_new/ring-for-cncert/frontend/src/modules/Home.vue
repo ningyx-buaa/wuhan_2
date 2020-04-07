@@ -250,10 +250,10 @@ export default {
                   label: {
                     normal: {
                       show: true,
-                      position: 'inner', // 标签的位置
+                      position: 'inner',
                       textStyle: {
                         fontWeight: 300 ,
-                        fontSize: 16    // 文字的字体大小
+                        fontSize: 16
                       },
                         formatter: '{d}%'
                     }
