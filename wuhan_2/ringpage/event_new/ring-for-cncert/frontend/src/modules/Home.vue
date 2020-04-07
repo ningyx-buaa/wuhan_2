@@ -2,7 +2,7 @@
   <div class="page-wrapper" v-title data-title="事件分析">
     <v-filter-tab @update:filter="updateFilter"></v-filter-tab>
     <v-search-box :search-input.sync="searchInput"></v-search-box>
-      <table border="" cellspacing="" cellpadding="" style="width:1700px">
+      <table border="" cellspacing="" cellpadding="" style="width:1400px">
             <tr>
                 <td style="width:500px; height: 300px">
                   <div id="left_up" ref="myCharts" style="width:500px; height: 300px"></div>
@@ -164,8 +164,9 @@ export default {
       xAxis: {
           type: 'category',
           boundaryGap: false,
-          data: ['2019年12月1日','2019年12月2日','2019年12月3日','2019年12月4日','2019年12月5日','2019年12月6日','2019年12月7日','2019年12月8日',
-          '2019年12月9日','2019年12月10日','2019年12月11日','2019年12月12日']
+          // data: ['2019年12月1日','2019年12月2日','2019年12月3日','2019年12月4日','2019年12月5日','2019年12月6日','2019年12月7日','2019年12月8日',
+          // '2019年12月9日','2019年12月10日','2019年12月11日','2019年12月12日']
+          data: ['2019年12月1日','2019年12月2日','2019年12月3日','2019年12月4日','2019年12月5日','2019年12月6日']
       },
       yAxis: {
           type: 'value'
@@ -176,7 +177,17 @@ export default {
               type: 'line',
               stack: '总量',
               areaStyle: {normal: {}},
-              data: [3755,3511,3605,11859,4145,4635,63858,5108,4354,6547,7774,3720]
+              data: [
+                      {
+                          value: 1548,
+                          name: '外国发动入侵行动'
+                      },
+                      {value: 535, name: '国家所持有的立场'},
+                      {value: 510, name: '南海采取相应防卫行动'},
+                      {value: 634, name: '外国在我南海进行军演行动'},
+                      {value: 735, name: '各家媒体进行评论报道'},
+                      {value: 735, name: '国家元首决定进行访问行动'}
+                  ],
           },
       ]
   }
@@ -255,9 +266,7 @@ export default {
                         fontWeight: 300 ,
                         fontSize: 16
                       },
-                      formatter: function (param) {
-                         return '{d}%' + param.data.name;
-                      }
+                        formatter: '{d}%'
                     }
                   },
                   data: [
