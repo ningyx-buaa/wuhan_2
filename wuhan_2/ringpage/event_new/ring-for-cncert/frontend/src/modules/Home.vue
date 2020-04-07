@@ -247,15 +247,15 @@ export default {
                   radius: '65%',
                   center: ['50%', '50%'],
                   selectedMode: 'single',
-                  label:{   
-                    normal:{
-                      show:true,
-                      position:'inner', //标签的位置
-                      textStyle : {
-                        fontWeight : 300 ,
-                        fontSize : 16    //文字的字体大小
+                  label: {
+                    normal: {
+                      show: true,
+                      position: 'inner', // 标签的位置
+                      textStyle: {
+                        fontWeight: 300 ,
+                        fontSize: 16    // 文字的字体大小
                       },
-                        formatter:'{d}%'
+                        formatter: '{d}%'
                     }
                   },
                   data: [
