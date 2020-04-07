@@ -2,7 +2,7 @@
   <div class="page-wrapper" v-title data-title="事件分析">
     <v-filter-tab @update:filter="updateFilter"></v-filter-tab>
     <v-search-box :search-input.sync="searchInput"></v-search-box>
-      <table border="" cellspacing="" cellpadding="" style="width:1200px">
+      <table border="" cellspacing="" cellpadding="" style="width:1700px">
             <tr>
                 <td style="width:500px; height: 300px">
                   <div id="left_up" ref="myCharts" style="width:500px; height: 300px"></div>
@@ -247,6 +247,19 @@ export default {
                   radius: '65%',
                   center: ['50%', '50%'],
                   selectedMode: 'single',
+                  label:{            //饼图图形上的文本标签
+                            normal:{
+                                show:true,
+                                position:'inner', //标签的位置
+                                textStyle : {
+                                    fontWeight : 300 ,
+                                    fontSize : 16    //文字的字体大小
+                                },
+                                formatter:'{d}%'
+
+                                
+                            }
+                   },
                   data: [
                       {
                           value: 1548,
