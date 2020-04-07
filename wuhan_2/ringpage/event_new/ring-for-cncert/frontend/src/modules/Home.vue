@@ -187,6 +187,7 @@ export default {
                       formatter: function (param) {
                         return param.data.name + ":" + param.data.value;
                     }
+                  }
               },
               data: [
                 {value: 3755, name: '美方在南海开展“航行自由行动”？中方：人不犯我 我不犯人'},
