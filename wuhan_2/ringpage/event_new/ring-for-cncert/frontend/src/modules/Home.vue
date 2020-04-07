@@ -266,42 +266,42 @@ export default {
         },
         legend: {
           orient: 'vertical',
-          left: '70%',  //图例距离左的距离
-          y: 'center',  //图例上下居中
+          left: '70%',
+          y: 'center',
           data: ["入侵行动", "国家立场", "防卫行动", "军演行动", "媒体评论", "访问行动"]
         },
         color: ['rgb(203,155,255)', 'rgb(149,162,255)', 'rgb(58,186,255)',
-                'rgb(119,168,249)', 'rgb(235,161,159)', 'rgb(200,101,159)'],//五个数据，五个颜色
+                'rgb(119,168,249)', 'rgb(235,161,159)', 'rgb(200,101,159)'],
         series: [
           {
             name: '',
             type: 'pie',
-            radius: '70%',  //图的大小
-            center: ['35%', '50%'], //图的位置，距离左跟上的位置
-            data:[
+            radius: '70%',
+            center: ['35%', '50%'],
+            data: [
               {
-                name:"入侵行动",
-                value:'10'
+                name: "入侵行动",
+                value: '10'
               },
               {
-                name:"国家立场",
-                value:'8'
+                name: "国家立场",
+                value: '8'
               },
               {
-                name:"防卫行动",
-                value:'9'
+                name: "防卫行动",
+                value: '9'
               },
               {
-                name:"军演行动",
-                value:'5'
+                name: "军演行动",
+                value: '5'
               },
               {
-                name:"媒体评论",
-                value:'6'
+                name: "媒体评论",
+                value: '6'
               },
               {
-                name:"访问行动",
-                value:'4'
+                name: "访问行动",
+                value: '4'
               }
             ]
           }
