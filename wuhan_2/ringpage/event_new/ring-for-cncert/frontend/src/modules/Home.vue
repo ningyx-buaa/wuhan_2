@@ -270,7 +270,7 @@ export default {
               bottom: 10,
               left: 'center',
               formatter: '{name}',
-                textStyle:{
+                textStyle: {
                     color: '#FFFFFF'
               },
               data: [
