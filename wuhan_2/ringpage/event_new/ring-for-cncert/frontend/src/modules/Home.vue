@@ -258,6 +258,7 @@ export default {
                       formatter: function (param) {
                          return '{d}%' + param.data.name;
                       }
+                    }
                   },
                   data: [
                       {
