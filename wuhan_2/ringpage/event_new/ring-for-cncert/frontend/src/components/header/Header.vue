@@ -10,11 +10,10 @@
       <b-collapse is-nav id="nav_collapse">
         <b-navbar-nav class="header-navbar-nav">
           <li class="nav-item">
-<<<<<<< HEAD
             <a href="#/" class="nav-link" :class="{active: $route.fullPath==='/'}" target="_self">事件分析</a>
-=======
-            <a href="#/" class="nav-link" :class="{active: $route.fullPath==='/'}" target="_self">专家观点</a>
->>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5
+<!-- ======= -->
+            <!-- <a href="#/" class="nav-link" :class="{active: $route.fullPath==='/'}" target="_self">专家观点</a> -->
+<!-- >>>>>>> ce55a63e31a0b74836a5426d38bb75309f1fabb5 -->
           </li>
           <!-- <li class="nav-item">
             <a href="#/event" class="nav-link" :class="{active: $route.fullPath==='/event'}" target="_self">回溯分析</a>
