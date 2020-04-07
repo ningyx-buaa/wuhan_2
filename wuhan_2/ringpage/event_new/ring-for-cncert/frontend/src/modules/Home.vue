@@ -247,19 +247,17 @@ export default {
                   radius: '65%',
                   center: ['50%', '50%'],
                   selectedMode: 'single',
-                  label:{            //饼图图形上的文本标签
-                            normal:{
-                                show:true,
-                                position:'inner', //标签的位置
-                                textStyle : {
-                                    fontWeight : 300 ,
-                                    fontSize : 16    //文字的字体大小
-                                },
-                                formatter:'{d}%'
-
-                                
-                            }
-                   },
+                  label:{   
+                    normal:{
+                      show:true,
+                      position:'inner', //标签的位置
+                      textStyle : {
+                        fontWeight : 300 ,
+                        fontSize : 16    //文字的字体大小
+                      },
+                        formatter:'{d}%'
+                    }
+                  },
                   data: [
                       {
                           value: 1548,
