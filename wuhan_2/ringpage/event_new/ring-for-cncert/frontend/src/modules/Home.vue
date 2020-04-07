@@ -265,24 +265,26 @@ export default {
           },
           legend: {
               orient: 'vertical',
+              show: true,
               top: 'middle',
               x: 'left',
               itemWidth: 70,
               itemHeight: 30,
               // formatter: '{name}',
               bottom: 10,
-              formatter: '{name}',
-                textStyle: {
-                    color: 'black'
-              },
-              data: [
-                {name: "入侵行动"},
-                {name: "国家立场"},
-                {name: "防卫行动"},
-                {name: "军演行动"},
-                {name: "媒体评论"},
-                {name: "访问行动"}
-              ]
+              // formatter: '{name}',
+              //   textStyle: {
+              //       color: 'black'
+              // },
+              // data: [
+              //   {name: "入侵行动"},
+              //   {name: "国家立场"},
+              //   {name: "防卫行动"},
+              //   {name: "军演行动"},
+              //   {name: "媒体评论"},
+              //   {name: "访问行动"}
+              // ]
+              data: ["入侵行动", "国家立场", "防卫行动", "军演行动", "媒体评论", "访问行动"],
           },
           series: [
               {
