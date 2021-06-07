@@ -46,7 +46,7 @@
         <hibernate-validator.version>4.3.1.Final</hibernate-validator.version>
         <jackson.version>2.6.7</jackson.version>
         <slf4j.version>1.7.5</slf4j.version>
-        <logback.version>1.0.13</logback.version>
+        <logback.version>1.2.0</logback.version>
         <hbase.version>0.98.3-hadoop2</hbase.version>
         <hadoop.version>2.2.0</hadoop.version>
         <es.version>2.3.1</es.version>
