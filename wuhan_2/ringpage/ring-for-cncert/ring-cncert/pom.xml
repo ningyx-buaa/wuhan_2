@@ -56,7 +56,7 @@
         <junit.version>4.11</junit.version>
         <mockito.version>1.9.5</mockito.version>
         <selenium.version>2.33.0</selenium.version>
-        <jetty.version>9.2.3.v20140905</jetty.version>
+        <jetty.version>9.4.41.v20210516</jetty.version>
         <data-access.version>0.0.36-SNAPSHOT</data-access.version>
         <!-- Plugin的属性定义 -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
